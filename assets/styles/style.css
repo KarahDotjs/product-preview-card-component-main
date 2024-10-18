@@ -1,2 +1,114 @@
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+:root {
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+  --Dark-cyan: hsl(158, 36%, 37%);
+}
+
+
+body {
+   background-color: var(--Cream);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+p {
+   font-family: montserrat;
+   color: var(--Dark-grayish-blue);
+   font-size: 0.875rem;
+}
+.card-product-container {
+   display: flex;
+    width: 600px;
+    height: 450px;
+    
+    
+}
+
+.card-product-content{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   height: 100%;
+   background-color: var(--White);
+   border-radius: 30px;
+   
+}
+
+.card-product-content > div {
+   width: 100%;
+   
+}
+
+ img {
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+   border-radius: 10px 0px 0px 10px;
+ 
+}
+
+.card-content-infos {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   padding: 30px;
+}
+.card-content-title  h1 {
+   font-family: Fraunces;
+   line-height: initial;
+}
+.card-content-price {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 10px;
+}
+
+
+
+.card-content-price p:first-child {
+   font-size: 2rem ;
+   color: var(--Dark-cyan);
+   font-weight: bold;
+   font-family: Fraunces;
+}
+
+.card-content-price p:nth-child(2) {
+   text-decoration:line-through
+}
+
+.card-content-button  {
+   width: 100%;
+   display: flex;
+ 
+
+}.card-content-button button {
+   margin-top: 25px;
+   font-family: montserrat;
+   background-color: var(--Dark-cyan);
+   color: var(--White);
+   font-weight: bold;
+   border:none;
+   padding: 15px;
+   width: 100%;
+   border-radius: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
